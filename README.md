@@ -18,3 +18,5 @@ Add the element. For the sake of informing your users, you must have an [output 
 ```
 
 You can only have one element per class in the custom elements registry though. You'd have to extend your class with a new one if you wanted to configure another element based on its name. Kinda defeats the purpose.
+
+Also learned from this that you can't redefine or remove custom element definitions. That feels very unusual for javascript.
