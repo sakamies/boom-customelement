@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boom custom element</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+      max-width: 50rem;
+      margin: auto;
+      padding: 1rem;
+    }
+    #daboom, #booms {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Boom custom element</h1>
+  <p>The element below element will self destruct in 5 seconds.</p>
+  <p>The element below element will self destruct in 15 seconds.</p>
+  <p id="booms">
+    <boom---------------></boom--------------->
+  </p>
+  <p>
+    <button id="newboom">Make another boom</button>
+  </p>
+  <p>
+    This is a silly example of how you can parameterize custom elements with their name. Define an element named &lt;boom---&gt; and the element will have a fuse of as many seconds as there are dashes in its name.
+  </p>
+  <p>
+    Rather useless though, because you can only have one element per class in the custim elements registry.
+  </p>
+  <p>
+    Check <a href="boom.js">boom.js</a> for the code.
+  </p>
+
+
+  <script type="module">
+    import { Boom } from './boom.js'
+    customElements.define('boom---------------', Boom);
+    newboom.addEventListener('click', () => {
+      booms.append(document.createElement('boom---------------'))
+    })
+  </script>
+</body>
+</html>
