@@ -1,8 +1,8 @@
 <h1>Boom custom element</h1>
 
-This is a silly example of how you can parameterize custom elements with their name. Define an element named &lt;boom---&gt; and the element will have a fuse of as many seconds as there are dashes in its name.
+This is a silly example of how you can parameterize custom elements with their name. Define an element named `<boom--->` and the element will have a fuse of as many seconds as there are dashes in its name.
 
-Import as usual.
+Import and define as usual.
 
 ```js
 import { Boom } from './boom.js'
