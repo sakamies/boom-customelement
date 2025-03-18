@@ -2,10 +2,10 @@ export class Boom extends HTMLElement {
   constructor() {super()}
 
   get count() {
-    return parseInt(this.querySelector('output[name="count"]').value)
+    return parseInt(this.querySelector('output').value)
   }
   set count(value) {
-    this.querySelector('output[name="count"]').value = value
+    this.querySelector('output').value = value
   }
 
   down = () => {

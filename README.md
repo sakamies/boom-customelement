@@ -9,11 +9,11 @@ import { Boom } from './boom.js'
 customElements.define('boom---', Boom);
 ```
 
-Add the element. For the sake of informing your users, you must have an [output element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output) with `name="count"` inside your boom. It will show the seconds remaining.
+Add the element. For the sake of informing your users, you must have an [output element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output) inside your boom. It will show the seconds remaining.
 
 ```html
   <boom--->
-    This message will self destruct in <output name="count"></output> seconds.
+    This message will self destruct in <output></output> seconds.
   </boom--->
 ```
 
