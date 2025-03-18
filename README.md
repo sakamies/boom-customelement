@@ -11,4 +11,4 @@ customElements.define('boom---', Boom);
   <boom---></boom--->
 ```
 
-Rather useless though, because you can only have one element per class in the custim elements registry.
+You can only have one element per class in the custom elements registry though. You'd have to extend your class with a new one if you wanted to configure another element based on its name. Kinda defeats the purpose.
