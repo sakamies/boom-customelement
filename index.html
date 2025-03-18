@@ -23,7 +23,7 @@
   <h1>Boom custom element</h1>
   <p id="booms">
     <boom--------------->
-      This message will self destruct in <output name="count"></output> seconds.
+      This message will self destruct in <output></output> seconds.
     </boom--------------->
   </p>
   <p>
@@ -46,7 +46,7 @@
     newboom.addEventListener('click', () => {
       booms.insertAdjacentHTML('beforeend', `
         <boom--------------->
-          This message will self destruct in <output name="count"></output> seconds.
+          This message will self destruct in <output></output> seconds.
         </boom--------------->
       `)
     })
